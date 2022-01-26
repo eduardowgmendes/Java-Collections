@@ -1,4 +1,4 @@
-#Trabalahando com Mapas
+# Trabalahando com Mapas
 
 No que diz respeito ao Collections Framework, um *mapa* armazena associações entre chaves e valores, ou *pares chave/valor*. Dada uma chave, você pode encontrar seu valor. Há um aspecto dos mapas que é importante mencionar desde o início: eles não implementam **Iterable**. Ou seja, você *não* pode percorrer um mapa usando um laço **for** de estilo for-each. Além disso, não pode obter um iterador para um mapa. No entanto, como veremos em breve, pode obter a visão de coleção do mapa, e essa sim permite o uso do laço for ou de um iterador.
 
