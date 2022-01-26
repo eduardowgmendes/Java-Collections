@@ -103,6 +103,18 @@ Além dos métodos herdados de **SortedMap**, **NavigableMap** adiciona os resum
 
 Preste atenção nos métodos `ceilingX` e `floorX`. Eles procuram no mapa uma chave que esteja próxima de outra. Por exemplo, os métodos `ceilingEntry( )` e `floorEntry( )` encontram uma entrada cuja chave esteja próxima ou seja igual a outra chave. Observe também os métodos `higherX` e `lowerX`. Eles procuram no mapa uma chave que esteja próxima de outra, mas que não seja igual a ela. Você também pode obter vários submapas baseados em ocorrências próximas.
 
+### A interface Map.Entry
+A interface **Map.Entry** nos permite trabalhar com uma entrada do mapa. Lembre-se, o método `entrySet( )` declarado pela interface **Map** retorna um **Set** contendo as entradas do mapa. Cada um desses elementos do conjunto é um objeto **Map.Entry**. **Map.Entry** é genérica e declarada desta forma:
+```java
+interface Map.Entry<K, V>
+```
+Aqui, **K** especifica o tipo das chaves, e **V**, o tipo dos valores. Além das sobreposições de `equals( )` e `hashCode( )`, **Map.Entry** especifica três métodos que dão acesso a uma entrada do mapa. Eles são:
+```java
+K getKey( )
+V getValue( )
+V setValue(V v)
+```
+Como o nome sugere, para qualquer instância de **Map.Entry**, `getKey( )` retorna sua chave e `getValue( )` retorna seu valor. Você pode definir o valor chamando `setValue( )`, passando o novo valor.
 
 
 
