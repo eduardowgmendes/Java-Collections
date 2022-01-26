@@ -70,3 +70,17 @@ public class HashMapDemo {
 }
 
 ```
+A saída desse programa é mostrada aqui (a ordem exata pode variar):
+```java
+Todd Hall: 99.22
+John Doe: 3434.34
+Ralph Smith: -19.08
+Tom Smith: 123.22
+Jane Baker: 1378.0
+
+John Doe’s new balance: 4434.34
+```
+
+O programa começa criando um mapa hash e então adiciona o mapeamento entre nomes e saldos chamando `put( )`. Em seguida, o conteúdo do mapa é exibido com o uso de uma visão de coleção, obtida com a chamada a `entrySet( )`. As chaves e valores são exibidos com uma chamada aos métodos `getKey( )` e `getValue( )` definidos por `Map.Entry`. Preste atenção em como o depósito é feito na conta de John Doe.
+
+Primeiro, o saldo atual é obtido com uma chamada a `get( )`. Depois, `put( )` é chamado com o novo saldo. Isso substitui automaticamente qualquer valor pré-existente associado à chave específica pelo novo valor. Logo, após a conta de John Doe ser atualizada, o mapa hash continuará contendo apenas uma conta “John Doe”.
