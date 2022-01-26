@@ -8,5 +8,5 @@ Este repositório visa ser um guia rápido para futuras referências sobre o ass
 ### Capítulos
 
  * [Trabalhando com Mapas](https://github.com/eduardowgmendes/Java-Collections-/blob/main/contents/set/map.md#trabalahando-com-mapas)  
- * [Classes de mapas](https://github.com/eduardowgmendes/Java-Collections-/blob/main/contents/set/map.md#trabalahando-com-mapas)  
+ * [Classes de mapas](https://github.com/eduardowgmendes/Java-Collections-/blob/main/contents/set/mapclasses.md#as-classes-de-mapas)  
  
