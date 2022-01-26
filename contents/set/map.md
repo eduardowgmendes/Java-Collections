@@ -19,7 +19,7 @@ A interface **Map** mapeia chaves exclusivas para valores. Uma chave é um objet
 ```java
 interface Map<K, V>
 ```
-Aqui, **K** especifica o tipo das chaves, e **V**, o tipo dos valores. Os métodos declarados por Map estão resumidos na Tabela à seguir: 
+Aqui, **K** especifica o tipo das chaves, e **V**, o tipo dos valores. Os métodos declarados por Map estão resumidos na tabela à seguir: 
 
 | Método | Descrição |
 |--------|-----------|
