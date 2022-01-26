@@ -28,8 +28,7 @@ Aqui, **K** especifica o tipo das chaves, e **V**, o tipo dos valores. Os métod
 | `boolean containsValue(Object value)` | Retorna **true** se o mapa chamador tiver *v* como valor. Caso contrário, retorna **false** | 
 | `Set<Map.Entry<K, V>> entrySet() ` | Retorna um **Set** contendo todas as entradas do mapa chamador como objetos do tipo **Map.Entry**. A coleção resultante é uma visão do mapa chamador. | 
 | `boolean equals(Object object)` | Retorna **true** se obj for um Map e tiver as mesmas entradas do Map chamador. Caso contrário, retorna **false**. |
-| `V get(Object key)` | Retorna o valor associado à chave k no mapa chamador.
-Retorna **null** se a chave não for encontrada. |
+| `V get(Object key)` | Retorna o valor associado à chave k no mapa chamador. Retorna **null** se a chave não for encontrada. |
 | `int hashCode()` | Retorna o código hash do mapa chamador. |
 | `boolean isEmpty()` | Retorna **true** se o mapa chamador estiver vazio.
 Caso contrário, retorna **false**. |
