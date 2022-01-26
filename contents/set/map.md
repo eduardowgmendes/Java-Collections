@@ -38,3 +38,10 @@ Aqui, **K** especifica o tipo das chaves, e **V**, o tipo dos valores. Os métod
 | `int size( )` | Retorna o número de entradas do mapa chamador. | 
 | `Collection<V> values( )` | Retorna uma coleção contendo todos os valores do mapa. A coleção resultante é uma visão do mapa chamador. |
 
+Duas operações básicas são os principais elementos de **Map**: `get( )` e `put( )`. Para inserir um valor em um mapa, use `put( )`, especificando a chave e o valor. Para obter um valor, chame `get( )`, passando a chave como argumento. O valor será retornado. Esses dois métodos atendem aos aspectos básicos da natureza dos mapas: armazenar um par chave/valor e retornar o valor quando dada a chave.
+
+Como mencionado anteriormente, embora os mapas façam parte do Collections Framework, eles não implementam a interface **Collection**. No entanto, você pode obter a visão de coleção do mapa. Para fazê-lo, pode usar o método `entrySet( )`. Ele retorna um objeto Set contendo os elementos do mapa. Para obter a visão de coleção das chaves, use `keySet( )`, e para obter a visão de coleção dos valores, use `values( )`.
+
+Todas as três visões de coleção referenciam os elementos do mapa original. Se um for alterado, o outro é afetado. Contudo, você não pode adicionar uma entrada ao mapa por intermédio da visão. As visões de coleção são o meio pelo qual os mapas são integrados ao corpo maior do Collections Framework.
+
+Para concluir, observe os métodos `containsKey( )` e `containsValue( )`. Eles permitem a procura de uma chave ou de um valor específico, respectivamente, em um mapa.
