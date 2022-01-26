@@ -62,10 +62,10 @@ por SortedMap estão resumidos na tabela à seguir:
 |--------|-----------|
 |`Comparator<? super K> comparator( )`| Retorna o comparador do mapa classificado chamador. Se nenhum comparador estiver sendo usado, **null** é retornado. |
 |`K firstKey( )` | Retorna a chave do menor valor. Já que o mapa é classificado, ela será a primeira chave do mapa chamador. Se chamado em um mapa vazio, uma `NoSuchElementException` será lançada. |
-|`SortedMap<K, V> headMap(K end) `| Retorna um SortedMap contendo os elementos do mapa chamador com chaves menores do que fim. O mapa resultante é uma visão do mapa chamador.|
-|`K lastKey( )`|Retorna a chave do maior valor. Já que o mapa| é classificado, ela será a última chave do mapa chamador. Se chamado em um mapa vazio, uma `NoSuchElementException` será lançada.|
-|`SortedMap<K, V> subMap(K start, K end)`| Retorna um SortedMap contendo os elementos do mapa chamador que estejam entre `start` e `end`. O mapa resultante é uma visão do mapa chamador.|
-|`SortedMap<K, V> tailMap(K start)`|Retorna um SortedMap contendo os elementos do mapa chamador maiores ou iguais a início. O mapa resultante é uma visão do mapa chamador.|
+|`SortedMap<K, V> headMap(K end) `| Retorna um **SortedMap** contendo os elementos do mapa chamador com chaves menores do que `end`. O mapa resultante é uma visão do mapa chamador.|
+|`K lastKey( )`|Retorna a chave do maior valor. Já que o mapa é classificado, ela será a última chave do mapa chamador. Se chamado em um mapa vazio, uma `NoSuchElementException` será lançada.|
+|`SortedMap<K, V> subMap(K start, K end)`| Retorna um **SortedMap** contendo os elementos do mapa chamador que estejam entre `start` e `end`. O mapa resultante é uma visão do mapa chamador.|
+|`SortedMap<K, V> tailMap(K start)`|Retorna um **SortedMap** contendo os elementos do mapa chamador maiores ou iguais a início. O mapa resultante é uma visão do mapa chamador.|
 
 Observe que **SortedMap** fornece métodos que permitem o trabalho com *submapas* (em outras palavras, subconjuntos de um mapa). Para obter um submapa, use `headMap( )`, `tailMap( )` ou `subMap( )`. Já que o mapa é classificado, esses métodos permitem a especificação do intervalo de entradas a ser obtido com base nos valores das chaves passadas. Cuidado, porque os submapas retornados são “visões” e estão sujeitos a várias restrições.
 
