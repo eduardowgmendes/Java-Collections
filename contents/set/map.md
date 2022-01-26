@@ -60,7 +60,6 @@ por SortedMap estão resumidos na tabela à seguir:
 
 | Método | Descrição |
 |--------|-----------|
-
 |`Comparator<? super K> comparator( )`| Retorna o comparador do mapa classificado chamador. Se nenhum comparador estiver sendo usado, **null** é retornado. |
 |`K firstKey( )` | Retorna a chave do menor valor. Já que o mapa é classificado, ela será a primeira chave do mapa chamador. Se chamado em um mapa vazio, uma `NoSuchElementException` será lançada. |
 |`SortedMap<K, V> headMap(K end) `| Retorna um SortedMap contendo os elementos do mapa chamador com chaves menores do que fim. O mapa resultante é uma visão do mapa chamador.|
