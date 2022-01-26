@@ -30,19 +30,11 @@ Aqui, **K** especifica o tipo das chaves, e **V**, o tipo dos valores. Os métod
 | `boolean equals(Object object)` | Retorna **true** se obj for um Map e tiver as mesmas entradas do Map chamador. Caso contrário, retorna **false**. |
 | `V get(Object key)` | Retorna o valor associado à chave k no mapa chamador. Retorna **null** se a chave não for encontrada. |
 | `int hashCode()` | Retorna o código hash do mapa chamador. |
-| `boolean isEmpty()` | Retorna **true** se o mapa chamador estiver vazio.
-Caso contrário, retorna **false**. |
-| `Set<K> keySet()` | Retorna um Set contendo todas as chaves do mapa
-chamador. A coleção resultante é uma visão do mapa
-chamador. |
-| `V put(K k, V v)` | Insere uma entrada no mapa chamador, sobrepondo
-qualquer valor anterior associado à chave. A chave e o valor
-são k e v, respectivamente. Retorna **null** se a chave não
-existir. Caso contrário, o valor anterior é retornado. |
+| `boolean isEmpty()` | Retorna **true** se o mapa chamador estiver vazio. Caso contrário, retorna **false**. |
+| `Set<K> keySet()` | Retorna um Set contendo todas as chaves do mapa chamador. A coleção resultante é uma visão do mapa chamador. |
+| `V put(K k, V v)` | Insere uma entrada no mapa chamador, sobrepondo qualquer valor anterior associado à chave. A chave e o valor são k e v, respectivamente. Retorna **null** se a chave não existir. Caso contrário, o valor anterior é retornado. |
 | `void putAll(Map< ? extends K, ? extends V> map)` | Insere todas as entradas de *map* no mapa chamador. |
-| `V remove(Object k)` | Remove a entrada cuja chave é k no mapa chamador.
-O valor do elemento removido é retornado. |
+| `V remove(Object k)` | Remove a entrada cuja chave é k no mapa chamador. O valor do elemento removido é retornado. |
 | `int size( )` | Retorna o número de entradas do mapa chamador. | 
-| `Collection<V> values( )` | Retorna uma coleção contendo todos os valores do mapa.
-A coleção resultante é uma visão do mapa chamador. |
+| `Collection<V> values( )` | Retorna uma coleção contendo todos os valores do mapa. A coleção resultante é uma visão do mapa chamador. |
 
