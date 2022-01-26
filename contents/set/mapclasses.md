@@ -28,7 +28,7 @@ HashMap(Map<? extends K, ? extends V> map)
 HashMap(int initialCapacity)
 HashMap(int initialCapacity, float fillRate)
 ```
-O primeiro construtor cria um mapa hash vazio. O segundo inicializa o mapa hash usando os elementos de mapa. O terceiro inicializa a capacidade inicial do mapa hash com `initialCapacity`. O quarto inicializa tanto a capacidade inicial quanto a **taxa de preenchimento (fator de carga)** do mapa hash usando seus argumentos.
+O primeiro construtor cria um mapa hash vazio. O segundo inicializa o mapa hash usando os elementos de mapa. O terceiro inicializa a capacidade inicial do mapa hash com `initialCapacity`. O quarto inicializa tanto a capacidade inicial com `initialCapacity`quanto a **taxa de preenchimento (fator de carga)** do mapa hash com `fillRate` usando seus argumentos.
 
 O significado de **capacidade** e **taxa de preenchimento** é o mesmo usado na classe `HashSet`, descrita anteriormente. A capacidade inicial padrão é **16**. A taxa de preenchimento padrão é **0,75**.
 
