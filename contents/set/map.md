@@ -96,6 +96,12 @@ Além dos métodos herdados de **SortedMap**, **NavigableMap** adiciona os resum
 |`Map.Entry<K,V> lowerEntry(K object)`|Procura no conjunto a maior chave **k** de modo que `k < object`. Se a chave for encontrada, sua entrada será retornada. Caso contrário, **null** será retornado.|
 |`K lowerKey(K object)`|Procura no conjunto a maior chave **k** de modo que `k < object`. Se a chave for encontrada, ela será retornada. Caso contrário, **null** será retornado.|
 |`NavigableSet<K> navigableKeySet( )`|Retorna um **NavigableSet** contendo todas as chaves do mapa chamador. O conjunto resultante é uma visão do mapa chamador.|
+|`Map.Entry<K,V> pollFirstEntry( )`|
+Retorna a primeira entrada, removendo-a no processo. Já que o mapa é classificado, ela será a entrada de chave com menor valor. Se o mapa estiver vazio, null será retornado.|
+|`Map.Entry<K,V> pollLastEntry( )`|Retorna a última entrada, removendo-a no processo. Já
+que o mapa é classificado, ela será a entrada de chave com maior valor. Se o mapa estiver vazio, null será retornado.|
+|`NavigableMap<K,V> subMap(K bottomThreshold, boolean includesBottom, K superiorThreshold, boolean includesSuperior)`| Retorna um **NavigableMap** contendo todas as entradas do mapa chamador com chaves maiores que `bottomThreshold` e menores que `superiorThreshold`. Se `includesInferior` for **true**, uma chave igual a `bottomThreshold` será incluída. Se `includesSuperior` for **true**, um elemento igual a `superiorThreshold` será incluído. O mapa resultante é uma visão do mapa chamador.|
+| `NavigableMap<K,V> tailMap(K bottomThreshold, boolean includes)` | Retorna um **NavigableMap** contendo todas as entradas do mapa chamador com chaves maiores que `bottomThreshold`. Se `includes` for **true**, uma chave igual à `bottomThreshold` será incluída. O mapa resultante é uma visão do mapa chamador. |
 
 Preste atenção nos métodos `ceilingX` e `floorX`. Eles procuram no mapa uma chave que esteja próxima de outra. Por exemplo, os métodos `ceilingEntry( )` e `floorEntry( )` encontram uma entrada cuja chave esteja próxima ou seja igual a outra chave. Observe também os métodos `higherX` e `lowerX`. Eles procuram no mapa uma chave que esteja próxima de outra, mas que não seja igual a ela. Você também pode obter vários submapas baseados em ocorrências próximas.
 
